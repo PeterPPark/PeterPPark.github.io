@@ -76,7 +76,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="all-tags" height="28">
+                <img src="/images/2.png" alt="all-tags" height="28">
             
             </a>
         </div>
@@ -167,28 +167,47 @@
         <div class="buttons is-centered">
             
                 
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Alipay. Please set it in <code>_config.yml</code>.
-</div>
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>Alipay</span>
+    <div class="qrcode"><img src="/none" alt="Alipay"></div>
+</a>
 
                 
                 
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
-</div>
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>Wechat</span>
+    <div class="qrcode"><img src="/none" alt="Wechat"></div>
+</a>
 
                 
                 <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
 
-<div class="notification is-danger">
-    You forgot to set the <code>business</code> and <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.
-</div>
+<a class="button is-warning donate" onclick="document.getElementById(&#39;paypal-donate-form&#39;).submit()">
+    <span class="icon is-small">
+        <i class="fab fa-paypal"></i>
+    </span>
+    <span>Paypal</span>
+</a>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" id="paypal-donate-form">
+    <input type="hidden" name="cmd" value="_donations" />
+    <input type="hidden" name="business" value="none" />
+    <input type="hidden" name="currency_code" value="USD" />
+</form>
 
                 
                 
-<div class="notification is-danger">
-    You forgot to set the <code>url</code> Patreon. Please set it in <code>_config.yml</code>.
-</div>
+<a class="button is-danger donate" href="/none" target="_blank">
+    <span class="icon is-small">
+        <i class="fab fa-patreon"></i>
+    </span>
+    <span>Patreon</span>
+</a>
 
                 
         </div>
@@ -214,22 +233,22 @@
                 <div>
                     
                     <figure class="image is-128x128 has-mb-6">
-                        <img class="" src="/images/avatar.png" alt="Your name">
+                        <img class="" src="/images/1601w.jpg" alt="Peter Park">
                     </figure>
                     
                     <p class="is-size-4 is-block">
-                        Your name
+                        Peter Park
                     </p>
                     
                     
                     <p class="is-size-6 is-block">
-                        Your title
+                        PeterPark&#39;s Tech Blog
                     </p>
                     
                     
                     <p class="is-size-6 is-flex is-flex-center has-text-grey">
                         <i class="fas fa-map-marker-alt has-mr-7"></i>
-                        <span>Your location</span>
+                        <span>Jeonju</span>
                     </p>
                     
                 </div>
@@ -239,11 +258,11 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Post
+                        Posts
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            1
+                            2
                         </p>
                     </a>
                 </div>
@@ -251,11 +270,11 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Categories
+                        Category
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
-                            0
+                            1
                         </p>
                     </a>
                 </div>
@@ -275,7 +294,7 @@
         </nav>
         
         <div class="level">
-            <a class="level-item button is-link is-rounded" href="https://github.com/ppoffice" target="_blank">
+            <a class="level-item button is-link is-rounded" href="https://github.com/PeterPPark" target="_blank">
                 Follow</a>
         </div>
         
@@ -284,7 +303,7 @@
         <div class="level is-mobile">
             
             <a class="level-item button is-white is-marginless" target="_blank"
-                title="Github" href="https://github.com/ppoffice">
+                title="Github" href="https://github.com/PeterPPark">
                 
                 <i class="fab fa-github"></i>
                 
@@ -294,27 +313,6 @@
                 title="Facebook" href="https://facebook.com">
                 
                 <i class="fab fa-facebook"></i>
-                
-            </a>
-            
-            <a class="level-item button is-white is-marginless" target="_blank"
-                title="Twitter" href="https://twitter.com">
-                
-                <i class="fab fa-twitter"></i>
-                
-            </a>
-            
-            <a class="level-item button is-white is-marginless" target="_blank"
-                title="Dribbble" href="https://dribbble.com">
-                
-                <i class="fab fa-dribbble"></i>
-                
-            </a>
-            
-            <a class="level-item button is-white is-marginless" target="_blank"
-                title="RSS" href="/">
-                
-                <i class="fas fa-rss"></i>
                 
             </a>
             
@@ -345,9 +343,9 @@
             </li>
         
             <li>
-                <a class="level is-mobile" href="https://github.com/ppoffice" target="_blank">
+                <a class="level is-mobile" href="https://github.com/PeterPPark" target="_blank">
                     <span class="level-left">
-                        <span class="level-item">PPOffice</span>
+                        <span class="level-item">Github</span>
                     </span>
                     <span class="level-right">
                         <span class="level-item tag">github.com</span>
@@ -369,7 +367,15 @@
                 Categories
             </h3>
             <ul class="menu-list">
-            
+            <li>
+        <a class="level is-marginless" href="/categories/%EB%8F%99%EC%97%AD%ED%95%99/">
+            <span class="level-start">
+                <span class="level-item">동역학</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li>
             </ul>
         </div>
     </div>
@@ -388,18 +394,37 @@
         
         <article class="media">
             
-            <a href="/2019/11/17/hello-world/" class="media-left">
+            <a href="/2019/11/17/%EB%A9%8B%EC%82%AC-%EB%B0%B1%EC%97%94%EB%93%9C-%EC%84%B8%EC%85%98-http-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="멋사 백엔드 세션-http 시작하기">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-17T04:53:38.995Z">2019-11-17</time></div>
-                    <a href="/2019/11/17/hello-world/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-17T06:33:43.000Z">2019-11-17</time></div>
+                    <a href="/2019/11/17/%EB%A9%8B%EC%82%AC-%EB%B0%B1%EC%97%94%EB%93%9C-%EC%84%B8%EC%85%98-http-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/" class="title has-link-black-ter is-size-6 has-text-weight-normal">멋사 백엔드 세션-http 시작하기</a>
                     <p class="is-size-7 is-uppercase">
                         
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/17/%EB%8F%99%EC%97%AD%ED%95%99-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-1/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="동역학 시작하기-1">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-17T06:25:27.000Z">2019-11-17</time></div>
+                    <a href="/2019/11/17/%EB%8F%99%EC%97%AD%ED%95%99-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-1/" class="title has-link-black-ter is-size-6 has-text-weight-normal">동역학 시작하기-1</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%EB%8F%99%EC%97%AD%ED%95%99/">동역학</a>
                     </p>
                 </div>
             </div>
@@ -422,7 +447,7 @@
                     <span class="level-item">November 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
@@ -464,18 +489,37 @@
         
         <article class="media">
             
-            <a href="/2019/11/17/hello-world/" class="media-left">
+            <a href="/2019/11/17/%EB%A9%8B%EC%82%AC-%EB%B0%B1%EC%97%94%EB%93%9C-%EC%84%B8%EC%85%98-http-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="멋사 백엔드 세션-http 시작하기">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-17T04:53:38.995Z">2019-11-17</time></div>
-                    <a href="/2019/11/17/hello-world/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-17T06:33:43.000Z">2019-11-17</time></div>
+                    <a href="/2019/11/17/%EB%A9%8B%EC%82%AC-%EB%B0%B1%EC%97%94%EB%93%9C-%EC%84%B8%EC%85%98-http-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0/" class="title has-link-black-ter is-size-6 has-text-weight-normal">멋사 백엔드 세션-http 시작하기</a>
                     <p class="is-size-7 is-uppercase">
                         
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/11/17/%EB%8F%99%EC%97%AD%ED%95%99-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-1/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="동역학 시작하기-1">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-17T06:25:27.000Z">2019-11-17</time></div>
+                    <a href="/2019/11/17/%EB%8F%99%EC%97%AD%ED%95%99-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-1/" class="title has-link-black-ter is-size-6 has-text-weight-normal">동역학 시작하기-1</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%EB%8F%99%EC%97%AD%ED%95%99/">동역학</a>
                     </p>
                 </div>
             </div>
@@ -498,7 +542,7 @@
                     <span class="level-item">November 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
@@ -533,7 +577,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="all-tags" height="28">
+                    <img src="/images/2.png" alt="all-tags" height="28">
                 
                 </a>
                 <p class="is-size-7">
